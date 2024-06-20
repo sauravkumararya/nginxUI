@@ -44,7 +44,7 @@ delivered in a container.
 docker run -d --restart=always --name nginxui -v /etc/nginx:/etc/nginx -p 8080:8080 schenkd/nginx-ui:latest
 ```
 
-### build local
+### Build local
 
 docker-compose up --build -d
 
