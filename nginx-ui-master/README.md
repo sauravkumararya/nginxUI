@@ -46,7 +46,9 @@ docker run -d --restart=always --name nginxui -v /etc/nginx:/etc/nginx -p 8080:8
 
 ### Build local
 
+```bash
 docker-compose up --build -d
+```
 
 Nginx UI: Access the Nginx UI by opening a web browser and navigating to http://localhost:8080.
 Nginx: Access the Nginx default page by navigating to http://localhost.
