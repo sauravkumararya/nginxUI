@@ -44,7 +44,17 @@ delivered in a container.
 docker run -d --restart=always --name nginxui -v /etc/nginx:/etc/nginx -p 8080:8080 schenkd/nginx-ui:latest
 ```
 
+### build local
+
+docker-compose up --build -d
+
+Nginx UI: Access the Nginx UI by opening a web browser and navigating to http://localhost:8080.
+Nginx: Access the Nginx default page by navigating to http://localhost.
+Python App: Access your Python app by navigating to http://localhost:5000.
+This setup allows you to run your local Python app alongside the Nginx UI and Nginx containers, ensuring all services are managed with Docker Compose. Adjust the path_to_your_python_app_directory to the actual path where your Python app is located.
+
 ### Docker
+
 
 Repository @ [DockerHub](https://hub.docker.com/r/schenkd/nginx-ui)
 
